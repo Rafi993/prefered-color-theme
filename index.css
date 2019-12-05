@@ -9,9 +9,6 @@ body {
   justify-content: center;
 }
 
-#saitama {
-  background-color: #fff;
-}
 
 h2 {
   margin: 0;
@@ -29,11 +26,19 @@ p {
   word-break: normal;
 }
 
+#saitama {
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.08);
+  background-color: #fff;
+}
+
 #saitama,
 #genos {
   min-height: 10em;
-  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.08);
   padding: 1em;
+}
+
+#genos{
+  min-width: 10em;
 }
 
 ::selection {
@@ -48,7 +53,8 @@ p {
 
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: #282828;
+    background-color: #000;
+    color: #fff;
   }
 
   #saitama {
@@ -62,12 +68,12 @@ p {
 
   ::selection {
     color: #282828;
-    background: #f3f3f3;
+    background: #fff;
   }
 
   ::-moz-selection {
     color: #282828;
-    background: #f3f3f3;
+    background: #fff;
   }
 }
 
